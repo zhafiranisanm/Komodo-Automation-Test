@@ -1,0 +1,18 @@
+{
+  "name": "fe-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "welcome": "testcafe chrome:emulation:device=Galaxy S5 test-case/test.js",
+    "test": "testcafe test-case/*/*.js",
+    "report": "allure generate artifacts/reports/allure-results -c -o artifacts/reports/allure-report && allure open artifacts/reports/allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.9.0",
+    "testcafe": "^1.4.0",
+    "testcafe-reporter-allure": "^1.0.5"
+  }
+}
